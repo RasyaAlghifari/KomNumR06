@@ -19,6 +19,35 @@ Cari luas dan error dari persamaan $$f(x) = 3x^5 - 8x^4$$ dengan cara Integral G
 
 ## Penyelesaian
 
+### Hitung Manual Integral
+
+Hitung  
+$$L = \int_{4}^{16} 3x^5 - 8x^4 \, dx$$
+
+Diketahui:
+$$f(x) = 3x^5 - 8x^4$$  
+$$a = 4, \quad b = 16$$
+
+Nilai konversi variabel:
+$$x = \frac{1}{2} (b - a) u + \frac{1}{2} (b + a)$$  
+$$x = \frac{1}{2} (16 - 4) u + \frac{1}{2} (16 + 4)$$  
+$$x = \frac{1}{2} (12) u + \frac{1}{2} (20)$$  
+$$x = 6u + 10$$
+
+Fungsi dalam bentuk $u$:
+
+$g(u) = \frac{1}{2}(b-a)f(x)$  
+$g(u) = \frac{1}{2}(16-4)[3(6u+10)^5 - 8(6u+10)^4]$  
+$g(u) = 6[3(6u+10)^5 - 8(6u+10)^4]$
+
+
+Hasil integral aproksimasi dengan Gaussian 2 titik
+$$L = g\left( -\frac{1}{\sqrt{3}} \right) + g\left( \frac{1}{\sqrt{3}} \right)$$  
+$$L = x + y$$  
+$$L = z$$
+
+
+
 ### Kode Python
 ```python
 from math import sqrt
